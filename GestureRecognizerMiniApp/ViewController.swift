@@ -23,7 +23,7 @@ class ViewController: UIViewController {
             }
     }
     
-    @IBAction func handlePan(_ gesture: UIPanGestureRecognizer) {
+    func movePuzzle(_ gesture: UIPanGestureRecognizer){
         // 1
         let translation = gesture.translation(in: view)
 
@@ -40,4 +40,40 @@ class ViewController: UIViewController {
         // 3
         gesture.setTranslation(.zero, in: view)
       }
+    @IBAction func handlePan(_ gesture: UIPanGestureRecognizer){
+        movePuzzle(gesture)
+    }
+    
+    @IBAction func handlePan1(_ sender: UIPanGestureRecognizer) {
+        movePuzzle(sender)
+    }
+    
+    @IBAction func handlePan2(_ sender: UIPanGestureRecognizer) {
+        movePuzzle(sender)
+    }
+    
+    @IBAction func handlePan3(_ sender: UIPanGestureRecognizer) {
+        movePuzzle(sender)
+    }
+    
+    @IBAction func handlePan4(_ sender: UIPanGestureRecognizer) {
+        movePuzzle(sender)
+    }
+    
+    @IBAction func handlePan5(_ sender: UIPanGestureRecognizer) {
+        movePuzzle(sender)
+    }
+    
+    
+    @IBAction func handlePan6(_ sender: UIPanGestureRecognizer) {
+        movePuzzle(sender)
+    }
+    
+    @IBAction func handlePan7(_ sender: UIPanGestureRecognizer) {
+        movePuzzle(sender)
+    }
+    
+    @IBAction func handlePan8(_ sender: UIPanGestureRecognizer) {
+        movePuzzle(sender)
+    }
 }
